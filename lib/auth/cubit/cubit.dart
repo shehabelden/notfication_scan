@@ -6,7 +6,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:nfc_manager/nfc_manager.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-
 import '../car_screen.dart';
 import '../scan_family.dart';
 import 'state.dart';
@@ -76,7 +75,7 @@ class AuthCubit extends Cubit<AuthMainState> {
         {
           "name":name,
           "national_id":emailAddress,
-          "userLayer":userLayer,
+          "userType":userLayer,
         }
     );
   }
